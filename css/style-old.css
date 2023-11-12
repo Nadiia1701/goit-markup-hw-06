@@ -136,6 +136,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+    font-style: normal;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #434455;
@@ -254,6 +255,10 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
+}
+
+.team-container {
+    margin-bottom: 72px;
 }
 
 .team-list-title, .portfolio-list-title {
