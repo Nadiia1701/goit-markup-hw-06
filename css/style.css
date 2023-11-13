@@ -277,6 +277,7 @@ body {
 }
 
 .portfolio-list-item {
+    border: 1px solid #F4F4FD;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -286,10 +287,10 @@ body {
 }
 
 .portfolio-img {
-    width: 100%;
-    height: 100%;
+    width: 288px;
+    height: 280px;
     object-fit: cover;
-    object-position: center.
+    object-position: center;
 }
 
 .portfolio-container {
@@ -337,20 +338,13 @@ body {
     height: 664px;
 }
 
-.container-flex-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 72px;
-}
-
 .footer-logo-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 17px;
+    margin-bottom: 72px;
 }
 
 .logo-footer {
@@ -383,6 +377,7 @@ body {
     justify-content: center;
     align-items: center;
     row-gap: 16px;
+    margin-bottom: 72px;
 }
 
 .social-list-title,
@@ -897,7 +892,6 @@ body {
     .hero {
         height: 436px;
         max-width: 768px;
-        margin-right: auto;
         padding-bottom: 112px;
         padding-top: 112px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/people-office-tablet.jpg);
@@ -914,6 +908,7 @@ body {
         max-width: 496px;
         margin-bottom: 36px;
         font-size: 56px;
+        line-height: 1.07;
     }
 
     .benefits-list, .team-list, .portfolio-list {
@@ -934,6 +929,11 @@ body {
     .portfolio-list {
         row-gap: 72px;
     }
+
+    .portfolio-img {
+        width: 356px;
+        height: 300px;
+    }
     .footer {
         height: 456px;
     }
@@ -945,8 +945,8 @@ body {
     }
 
     .container-flex-footer {
+        display: flex;
         flex-direction: row;
-        justify-content: flex-start;
         padding-left: 108px;
         flex-wrap: wrap;
         column-gap: 24px;
@@ -968,9 +968,123 @@ body {
     .modal {
         width: 408px;
     }
+}
 
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .logotype {
+        margin-right: 76px;
+    }
+
+    .contact {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .hero {
+        height: 600px;
+        max-width: 1440px;
+        padding-bottom: 188px;
+        padding-top: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/people-office-desktop.jpg);
+    }
+    @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/people-office-desktop@2x.jpg);
+        }
+    }
+
+    .main-title {
+        margin-bottom: 48px;
+    }
+
+    .benefits-list, .team-list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .benefits-list-item, .team-list-item {
+        width: calc((100% - 3 * 24px) / 4);
+    }
+
+    .benefits-icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+        border-radius: 4px;
+        border: 1px solid #8E8F99;
+        padding: 24px 100px;
+        margin-bottom: 8px;
+        background: #F4F4FD;
+    }
+
+    .benefits-list-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+        color:#2E2F42;
+    }
+
+    .benefits-list-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color:#434455;
+    }
+
+    .portfolio-list-item {
+        width: calc((100% - 2 * 24px) / 3);
+    }
+
+    .portfolio-img {
+        width: 360px;
+        height: 300px;
+    }
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        height: 312px;
+    }
+
+    .footer-logo-text-container {
+        margin-right: 120px;
+        margin-bottom: 0;
+    }
+
+    .container-flex-footer {
+        flex-wrap: nowrap;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        align-items: baseline;
+        column-gap: 0;
+    }
+
+    .footer-social-list-container {
+        margin-right: 80px;
+        margin-bottom: 0;
+    }
+
+    .subscribe-form {
+        display: flex;
+        row-gap: 16px;
+        column-gap: 24px;
     }
 }
